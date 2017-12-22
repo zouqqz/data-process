@@ -51,6 +51,9 @@ def compare(xml_list, image_list):
         print(ret_list)
 
 def makeLabels(xml_list):
+    if os.path.isfile(trainval_file_path):
+        os.remove(trainval_file_path)
+
     with open(trainval_file_path, 'a') as trainval_file:
         for x in xml_list:
             if os.path.splitext(x)[1] not in ('.xml',):

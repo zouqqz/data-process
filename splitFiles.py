@@ -48,6 +48,9 @@ def makeTrainVal():
     if os.path.isfile(new_trainval_file_path):
         return
 
+    if not os.path.isfile(trainval_file_path):
+        os.system("python makeLabel.py")
+
     with open(trainval_file_path, 'r') as trainval_file:
         for line in trainval_file.readlines():
             saveNewTrainVal(line)
