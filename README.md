@@ -15,6 +15,7 @@ xml和image文件名为 xxx_xxx_xxx 或 xxx_xxx 的数字形式
 * splitFiles.py : 把符合规则的xml和image文件摘取出来，并生成新的目录
 
 # 配置文件
+将config_default.example.py 复制为config_default.py, 更改config_default.py中的配置
 * folder : 待处理的数据目录
 * target_folder : 摘取出的文件存放到的新目录
-* files : 待摘取文件的名字匹配规则, 比如101:* , 表示摘取出文件名前缀为101的文件，102:01表示摘取出文件名前缀为102_01的文件
+* files : 待摘取文件的名字匹配规则, 比如101:* , 表示摘取出文件名前缀为101的文件，102:'01, 02' 表示摘取出文件名前缀为102_01 和  102_02的文件
