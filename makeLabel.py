@@ -14,9 +14,9 @@ import config_default
 import shutil
 
 os.chdir(sys.path[0])
-xml_folder = os.path.join(os.path.abspath(os.path.pardir), config_default.configs['folder'], 'annotations', 'xmls')
-image_folder = os.path.join(os.path.abspath(os.path.pardir), config_default.configs['folder'], 'images')
-data_folder = os.path.join(os.path.abspath(os.path.pardir), config_default.configs['folder'])
+xml_folder = os.path.join(os.path.pardir, config_default.configs['folder'], 'annotations', 'xmls')
+image_folder = os.path.join(os.path.pardir, config_default.configs['folder'], 'images')
+data_folder = os.path.join(os.path.pardir, config_default.configs['folder'])
 trainval_file_path = os.path.join(data_folder, 'annotations', 'trainval.txt')
 
 def compare(xml_list, image_list):

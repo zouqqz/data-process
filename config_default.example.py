@@ -1,6 +1,6 @@
 configs = {
-    'folder': 'shangpin',
-    'target_folder': 'shangpingshuju_new1',
+    'folder': 'shangpingshuju',
+    'target_folder': 'shangpingshuju_new3',
     'files': {
         '101': '*',
         '102': '01,02',
